@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+
+<script type="text/javascript">
+    document.addEventListener('contextmenu', function(e) {
+      e.preventDefault();
+    });
+  </script>
+<body>
+    <div class="cursor"></div>
+    <div class="cursor-follower"></div>
+    
+    <canvas id="canvas"></canvas>
+    
+    <div class="container">
+        <nav>
+            <a href="#" class="logo">WELCOME</a>
+            
+            <button class="nav-toggle">☰</button>
+            
+            <ul class="nav-links">
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="CV_VISHAL.pdf" download="computer" class="resume-link">Resume</a></li>
+            </ul>
+        </nav>
+        
+        <section class="hero">
+            <div class="hero-content">
+                <h1 class="hero-title">
+                    <span>Hi, I'm</span>
+                    <span class="highlight"> Bishal Das </span>
+                    <span>AlGO ARTIST</span>
+                </h1>
+                <p class="hero-description"> an Android & AI Developer blending code and creativity to build smart, impactful solutions. Currently exploring the future of agriculture with AI + IoT, and always hungry to learn more. Let’s innovate together!</p>
+                <a href="#contact" class="cta-button">Let's Connect</a>
+            </div>
+        </section>
+    </div>
+    
+    <section id="projects" class="projects">
+        <div class="container">
+            <h2 class="section-title">Featured Projects</h2>
+            
+            <div class="project-grid">
+                <div class="project-card" >
+                    <a href="https://github.com/BishalDas1010/Bluetooth-control-car-Arduino-code">
+                    <img src="Bluetooth.jpg" alt="Project 1" class="project-img">
+                    </a>
+                    <div class="project-content">
+                        <h3 class="project-title">Bluetooth-control-car </h3>
+                        <p class="project-description">Bluetooth Controlled Car using Arduino
+                            A wireless car controlled via Bluetooth using an Android phone, Arduino, HC-05 module</p>
+                        <div class="project-tags">
+                            <span class="project-tag">C++ code</span>
+                            <span class="project-tag">jetpack compose</span>
+                            <span class="project-tag">koltin</span>
+                        </div>
+                        
+                    </div>
+                </div>
+                
+                <div class="project-card">
+                    <img src="smartIregation.jpg" alt="Project 2" class="project-img">
+                    <div class="project-content">
+                        <h3 class="project-title">Smart Irrigation System using IoT</h3>
+                        <p class="project-description">An automated watering system using ESP32, soil moisture sensors, and a water pump. 
+                            It irrigates only when needed and sends real-time data to a mobile app or web dashboard.</p>
+                        <div class="project-tags">
+                            <span class="project-tag">ML </span>
+                            <span class="project-tag">koltin </span>
+                            <span class="project-tag">UI-jetpack compose</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="project-card">
+                    <img src="notepad.png.jpg" alt="Project 3" class="project-img">
+                    <div class="project-content">
+                        <h3 class="project-title">Notepad App</h3>
+                        <p class="project-description">
+                            A fast, simple app to write, save, and organize notes. Perfect for quick thoughts, to-do lists, and reminders — anytime, anywhere..</p>
+                        <div class="project-tags">
+                            <span class="project-tag">Kotlin</span>
+                            <span class="project-tag">UI - Jetpack Compose</span>
+                            <span class="project-tag">Room DB</span>
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <section id="about" class="about">
+        <div class="container">
+            <div class="about-img">
+                <img src="Bishal.png" alt="Profile Image" sizes="150">
+            </div>
+            
+            <div class="about-content">
+                <h2 class="about-title">About Me</h2>
+                <p class="about-description">I’m a CSE student with a strong passion for software development, AI, and IoT. I have experience in Android development (Kotlin), machine learning, and building IoT-based solutions. Currently, I'm focused on developing smart crop monitoring systems, AI models for crop yield prediction, and improving my skills in data science and computer vision.</p>
+                <p class="about-description">My journey began with my ongoing studies in Computer Science and Engineering, complemented by self-driven learning and hands-on projects in Android development, AI, and IoT. I thrive in collaborative environments and am always eager to learn new technologies and approaches.</p>
+                
+                <div class="skills">
+                    <h3 class="skills-title">Skills</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag">Kotlin</span>
+                        <span class="skill-tag">Java</span>
+                        <span class="skill-tag">C++</span>
+                        <span class="skill-tag">Python</span>
+                        <span class="skill-tag">Android Development</span>
+                        <span class="skill-tag">Machine Learning</span>
+                        <span class="skill-tag">IoT</span>
+                        <span class="skill-tag">Jetpack Compose</span>
+                        <span class="skill-tag">Data Science</span>
+                        <span class="skill-tag">Computer Vision</span>
+                        <span class="skill-tag">AI Development</span>
+                        <span class="skill-tag"> MY Sql</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="contact-title">Get In Touch</h2>
+            <p class="contact-description">Have a project in mind or just want to say hello? Feel free to reach out!</p>
+
+
+            <form class="contact-form" action="https://script.google.com/macros/s/AKfycbyH0WmYRkZmq99OUg-oa6GSKGSOgwWQOKgnxdd5pelEt9dA17fChVR2wG8X8szaHnweAg/exec" method="POST">
+                <div class="form-group">
+                    <input type="text" name="entry.2005620554" class="form-control" placeholder="Your Name" required>
+                </div>
+                <div class="form-group">
+                    <input type="email" name="entry.1045781291" class="form-control" placeholder="Your Email" required>
+                </div>
+                <div class="form-group">
+                    <input type="text" name="entry.1166974658" class="form-control" placeholder="Subject">
+                </div>
+                <div class="form-group">
+                    <textarea name="entry.839337160" class="form-control" placeholder="Your Message" required></textarea>
+                </div>
+                <button type="submit" class="submit-button">Send Message</button>
+            </form>
+
+
+
+        </div>
+    </section>
+    
+
+    <div id="custom-notification" class="notification" style="display: none;">
+        <div class="notification-content">
+            <p id="notification-message">Message sent successfully!😊</p>
+            <button id="notification-close" class="notification-button">OK</button>
+        </div>
+    </div>
+
+
+
+    <footer>
+        <div class="container">
+            <div class="social-links">
+                <a href="https://github.com/BishalDas1010" class="social-link">GitHub</a>
+                <a href="https://www.linkedin.com/in/biahaldas?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" class="social-link">LinkedIn</a>
+                <a href="https://x.com/visha29062004?t=ffkpbm1S0Fmm_YVkAQzzCg&s=09" class="social-link">Twitter</a>
+                <a href="#" class="social-link">Dribbble</a>
+            </div>
+            
+            <p class="footer-text">© 2025 Bishal Das. All rights reserved.</p>
+            <p class="footer-textt">Every bug you fix takes you one step closer to becoming a legend👑.</p>
+
+
+        </div>
+    </footer>
+
+
+
+
+    <script src="script.js"></script>
+
+</body>
+</html>
