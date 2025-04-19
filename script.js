@@ -439,3 +439,30 @@ if (contactForm) {
         document.getElementById('custom-notification').style.display = 'none';
     });
 }
+
+// Detect if the device is touch-based
+function isTouchDevice() {
+    return (('ontouchstart' in window) ||
+      (navigator.maxTouchPoints > 0) ||
+      (navigator.msMaxTouchPoints > 0));
+  }
+  
+  // Disable resource-intensive animations on mobile
+  document.addEventListener('DOMContentLoaded', function() {
+    if (isTouchDevice()) {
+      // Reduce number of particles on mobile
+      numberOfParticles = 50;
+      
+      // Disable cursor effects completely
+      const cursor = document.querySelector('.cursor');
+      const cursorFollower = document.querySelector('.cursor-follower');
+      
+      if (cursor) cursor.style.display = 'none';
+      if (cursorFollower) cursorFollower.style.display = 'none';
+      
+      // Use simpler animations for project cards
+      document.querySelectorAll('.project-card').forEach(card => {
+        card.style.transition = 'transform 0.3s ease';
+      });
+    }
+  });
